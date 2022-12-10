@@ -97,7 +97,7 @@ npm start
 
 👤 **Emmanuel Mhango**
 
-- GitHub: [@Nelitaa](https://github.com/emmanuellmhango)
+- GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-mhango-421504a4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
