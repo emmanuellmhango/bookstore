@@ -87,7 +87,7 @@ npm install
 To run the project, execute the following command:
 
 ```sh
-git checkout project1-initialize-project-with-components
+git checkout display-books
 npm start
 ```
 
