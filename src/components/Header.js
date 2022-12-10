@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Header = () => (
   <header>
     <nav>
-      <h1><Link to="/">Bookstore CMS</Link></h1>
+      <h1>Bookstore CMS</h1>
       <button type="button">
         <span />
         <span />
