@@ -7,7 +7,9 @@ const Header = () => (
       <h1>Bookstore CMS</h1>
       <button type="button">
         <span />
-        <span /> what button
+        <span />
+        {' '}
+        what button
         <span />
       </button>
       <ul>
