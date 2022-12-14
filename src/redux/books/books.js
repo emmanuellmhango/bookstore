@@ -1,27 +1,25 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-export const addBook = () => {
-  return {
-    type: ADD_BOOK
-  }
-};
+export const addBook = (book) => ({
+  type: ADD_BOOK,
+  payload: book,
+});
 
-export const removeBook = () => {
-  return {
-    type: REMOVE_BOOK
-  }
-};
+export const removeBook = (id) => ({
+  type: REMOVE_BOOK,
+  payload: id,
+});
 
 export default function booksReducer(books = [], action) {
   switch (action.type) {
     case ADD_BOOK:
       return [
         ...books,
-        //new book details
+        action.payload,
       ];
     case REMOVE_BOOK:
-      return;
+      return books.filter((book) => book.id !== action.payload);
     default:
       return books;
   }
