@@ -3,18 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    <nav>
+    <nav className="header-nav">
       <h1>Bookstore CMS</h1>
-      <button type="button">
-        <span />
-        <span />
-        {' '}
-        what button
-        <span />
-      </button>
-      <ul>
-        <li><Link to="/">BOOKS</Link></li>
-        <li><Link to="/categories">CATEGORIES</Link></li>
+      <ul className="nav-links">
+        <li className="link"><Link to="/">BOOKS</Link></li>
+        <li className="link"><Link to="/categories">CATEGORIES</Link></li>
       </ul>
     </nav>
   </header>
