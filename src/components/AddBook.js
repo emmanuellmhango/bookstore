@@ -37,8 +37,8 @@ const AddBook = () => {
       <div className="form-div">
         <span className="form-title">ADD NEW BOOK</span>
         <form className="form">
-          <input type="text" className="input-field" name="title" value={inputData.title} placeholder="Book title" onChange={onChangeHandler} />
-          <input type="text" className="input-field" name="author" value={inputData.author} placeholder="Book author" onChange={onChangeHandler} />
+          <input type="text" className="input-field" name="title" value={inputData.title} placeholder="Book title" onChange={onChangeHandler} required />
+          <input type="text" className="input-field" name="author" value={inputData.author} placeholder="Book author" onChange={onChangeHandler} required />
           <select className="input-field-select" value={inputData.category} onChange={onChangeHandler} name="category">
             <option>Book Category</option>
             <option>Fiction</option>
