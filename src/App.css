@@ -1,20 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Roboto+Slab:wght@300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 245, 249);
+  font-family: 'Montserrat', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .header-nav {
+  width: 99.4%;
+  background-color: rgb(255, 255, 255);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+  padding: 5px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.header-title {
+  color: rgb(0, 138, 251);
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .nav-links {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  list-style-type: none;
+  width: 30%;
+  align-items: center;
+  padding-left: 82px;
 }
 
 .link {
-  margin-right: 25px;
+  text-decoration: none;
+  color: rgb(114, 113, 113);
+}
+
+.icon-div {
+  padding-right: 82px;
+}
+
+.icon-button {
+  height: 50px;
+  border: none;
+  border: 1px solid #d3d2d2;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 28px;
+  color: rgb(0, 138, 251);
+}
+
+.header-container {
+  padding-bottom: 30px;
+}
+
+.container {
+  margin: 70px;
+  background-color: rgb(250, 250, 250);
 }
 
 .book-div {
-  background-color: rgb(242, 245, 247);
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
   margin-bottom: 10px;
-  padding: 10px;
+  margin-right: 90px;
+  margin-left: 90px;
+  padding: 0 10px;
+  height: 160px;
+  border-radius: 7px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.book-data {
+  padding: 20px;
+}
+
+.category {
+  color: rgb(114, 113, 113);
+  font-weight: 600;
+}
+
+.title {
+  color: rgb(47, 47, 48);
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.author {
+  color: rgb(140, 201, 252);
+  font-size: 17px;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.book-footer-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(140, 201, 252);
+}
+
+.space-li {
+  padding: 0 10px;
+}
+
+.progress-div {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+.progress-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.perc {
+  font-size: 24px;
+}
+
+.descr {
+  color: rgb(198, 202, 201);
+}
+
+.descr-chap {
+  color: rgb(198, 202, 201);
+}
+
+.circle-progress {
+  height: 100px;
+}
+
+.circle-progress-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.progress {
+  display: flex;
+}
+
+.line {
+  width: 2px;
+  background-color: rgb(198, 202, 201);
+  height: 70px;
+  margin: 0 50px;
+}
+
+.details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.margin-up {
+  margin-top: 10px;
+}
+
+.margin-up-btn {
+  margin-top: 20px;
+}
+
+.progress-btn {
+  height: 35px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(0, 138, 251);
+  border: none;
+  border-radius: 4px;
+  width: 160px;
+}
+
+.last-div {
+  margin-right: 30px;
+}
+
+.book-form {
+  margin: 30px 5%;
+}
+
+.rule {
+  background-color: rgb(198, 202, 201);
+  height: 1px;
+}
+
+.form-title {
+  color: rgb(116, 117, 117);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-div {
+  margin-top: 25px;
+}
+
+.form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.form-submit-btn {
+  height: 43px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(0, 138, 251);
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.input-field {
+  height: 30px;
+  width: 28%;
+  padding: 5px;
+}
+
+.input-field-select {
+  height: 43px;
+  width: 28%;
+}
+
+.categories {
+  padding: 20px;
+}
+
+.category-text {
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 70px;
 }

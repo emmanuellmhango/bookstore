@@ -2,13 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header>
+  <header className="header-container">
     <nav className="header-nav">
-      <h1>Bookstore CMS</h1>
-      <ul className="nav-links">
-        <li className="link"><Link to="/">BOOKS</Link></li>
-        <li className="link"><Link to="/categories">CATEGORIES</Link></li>
-      </ul>
+      <section className="nav-links">
+        <span className="header-title">Bookstore CMS</span>
+        <span><Link to="/" className="link">BOOKS</Link></span>
+        <span><Link to="/categories" className="link">CATEGORIES</Link></span>
+      </section>
+      <section className="icon-div">
+        <button className="icon-button" type="button">
+          <i className="fa fa-user icon" />
+        </button>
+      </section>
     </nav>
   </header>
 );
