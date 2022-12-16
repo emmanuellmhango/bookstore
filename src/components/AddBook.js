@@ -30,14 +30,27 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <h2>ADD NEW BOOK</h2>
-      <form>
-        <input type="text" name="title" value={inputData.title} placeholder="Book title" onChange={onChangeHandler} />
-        <input type="text" name="author" value={inputData.author} placeholder="Book author" onChange={onChangeHandler} />
-        <input type="text" name="category" value={inputData.category} placeholder="Book Category" onChange={onChangeHandler} />
-        <button type="submit" onClick={onClickHandler}>ADD BOOK</button>
-      </form>
+    <div className="book-form">
+      <div className="rule">
+        &nbsp;
+      </div>
+      <div className="form-div">
+        <span className="form-title">ADD NEW BOOK</span>
+        <form className="form">
+          <input type="text" className="input-field" name="title" value={inputData.title} placeholder="Book title" onChange={onChangeHandler} />
+          <input type="text" className="input-field" name="author" value={inputData.author} placeholder="Book author" onChange={onChangeHandler} />
+          <select className="input-field-select" value={inputData.category} onChange={onChangeHandler} name="category">
+            <option>Book Category</option>
+            <option>Fiction</option>
+            <option>Comic</option>
+            <option>Thriller</option>
+            <option>Adventurous</option>
+            <option>History</option>
+            <option>Science</option>
+          </select>
+          <button type="submit" className="form-submit-btn" onClick={onClickHandler}>ADD BOOK</button>
+        </form>
+      </div>
     </div>
   );
 };
