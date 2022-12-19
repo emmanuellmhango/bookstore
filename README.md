@@ -28,7 +28,7 @@
 
 # 📖 [Bookstore] <a name="about-project"></a>
 
-**[Bookstore]** is a website for checking out books . It is a Single Page App (SPA) that allows users to make see boobs and their ratings and also the book categories.
+**[Bookstore]** is a website for checking out books . It is a Single Page App (SPA) that allows users to see books, their categories and their ratings.
 
 ## 🛠 Built With <a name="built-with"></a>
 
